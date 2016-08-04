@@ -44,7 +44,7 @@ Messaging tools like Slack changed our work world. Standup changed our meetings.
     * `heroku git:remote -a heroku-app-name`
     * `git push heroku master`
   * Run the Migrations
-    * `heroku run rake db:migrate`
+    * `heroku run rake db:migrate --app heroku-app-name`
   * Add a new worker to your app (If you don't have one running yet)
     * `heroku ps:scale worker=1`
   * Configure an SMTP server to deliver the emails
